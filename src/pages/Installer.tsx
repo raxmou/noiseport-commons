@@ -1,6 +1,34 @@
 import { motion } from "framer-motion";
 
 import { useState } from "react";
+// SVG icon for APK download
+const ApkDownloadButton = () => (
+  <a
+    href="/noiseport.apk"
+    download
+    className="inline-flex items-center gap-2 px-4 py-2 rounded bg-primary text-neutral-950 font-bold shadow hover:bg-primary/90 transition-colors"
+    style={{ textDecoration: "none" }}
+  >
+    <svg
+      width="28"
+      height="28"
+      viewBox="0 0 28 28"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <rect width="28" height="28" rx="6" fill="#222" />
+      <path
+        d="M14 6v10m0 0l-4-4m4 4l4-4"
+        stroke="#ffffff"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <rect x="7" y="20" width="14" height="2" rx="1" fill="#ffffff" />
+    </svg>
+    <span>Télécharger l’APK Android</span>
+  </a>
+);
 import screenshot1 from "../assets/app-screenshot-1.png";
 import screenshot2 from "../assets/app-screenshot-2.png";
 import screenshot3 from "../assets/app-screenshot-3.png";
@@ -9,8 +37,21 @@ import screenshot5 from "../assets/app-screenshot-5.png";
 import screenshot6 from "../assets/app-screenshot-6.png";
 import screenshot7 from "../assets/app-screenshot-7.png";
 import wizardScreenshot from "../assets/wizard-screenshot.png";
+import mobile1 from "../assets/1.jpg";
+import mobile2 from "../assets/2.png";
+import mobile3 from "../assets/3.png";
+import mobile4 from "../assets/4.png";
+import mobile5 from "../assets/5.jpg";
+import mobile6 from "../assets/6.png";
+import mobile7 from "../assets/7.png";
+import mobile8 from "../assets/8.png";
+import mobile9 from "../assets/9.png";
+import mobileNoisePortSettings from "../assets/mobile-noiseport-settings.png";
+import mobileSettings2 from "../assets/mobile-settings.png";
+import mobileSlskdSettings from "../assets/mobile-slskd-settings.png";
 
 import ScreenshotCarousel from "./ScreenshotCarousel";
+import { i } from "framer-motion/client";
 
 export default function Installer() {
   const [tab, setTab] = useState<"apps" | "server">("apps");
@@ -25,7 +66,17 @@ export default function Installer() {
     screenshot6,
     screenshot7,
   ];
-  const mobileScreenshots = [screenshot5, screenshot6, screenshot7];
+  const mobileScreenshots = [
+    mobile1,
+    mobile2,
+    mobile3,
+    mobile4,
+    mobile5,
+    mobile6,
+    mobile7,
+    mobile8,
+    mobile9,
+  ];
   return (
     <motion.main
       className="prose prose-invert mx-auto px-4 py-12 font-syne pt-24"
@@ -220,17 +271,37 @@ export default function Installer() {
             <>
               <p>
                 Vous pouvez télécharger la version <strong>Android</strong>{" "}
-                directement depuis notre{" "}
-                <a
-                  href="https://github.com/noiseport/noiseport/releases"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-primary underline"
-                >
-                  page GitHub
-                </a>
-                . Les versions iOS et web arriveront prochainement.
+                directement ici&nbsp;:
+                <br />
+                <br />
+                <ApkDownloadButton />
+                <br />
+                <br />
+                <span className="text-xs text-neutral-400">
+                  (Fichier hébergé sur ce site, version la plus récente)
+                </span>
+                <br />
+                <br />
+                <b>Comment installer&nbsp;?</b>
+                <ul className="list-disc pl-5 mt-2 mb-2">
+                  <li>Téléchargez l’APK sur votre téléphone Android.</li>
+                  <li>
+                    Ouvrez le fichier téléchargé et suivez les instructions.
+                  </li>
+                  <li>
+                    Si besoin, autorisez l’installation d’applications de
+                    sources inconnues dans les paramètres Android.
+                  </li>
+                </ul>
+                <b>Note sécurité&nbsp;:</b> L’APK est signé et mis à jour
+                régulièrement. Installez uniquement depuis des sources fiables.
+                <br />
+                <br />
+                Désolé pour les possesseur·euses d’iPhone, mais il faut payer
+                100€ par an pour publier une application sur l’App Store, ce qui
+                n’est pas viable pour un projet open-source et gratuit.
               </p>
+              <br />
               <div className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 border border-primary">
                 <strong>À propos de l’application Mobile</strong>
                 <br />
