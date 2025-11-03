@@ -1,6 +1,5 @@
 
 import { useState } from 'react';
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../contexts/ThemeContext';
 import logo from '../assets/logo.png';
@@ -16,26 +15,9 @@ export default function NavBar() {
   const { pathname } = useLocation();
   const { theme, toggleTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [hidden, setHidden] = useState(false);
-  const [lastScroll, setLastScroll] = useState(0);
-
-  // Hide nav on scroll down, show on scroll up
-  React.useEffect(() => {
-    const handleScroll = () => {
-      const currentScroll = window.scrollY;
-      if (currentScroll > lastScroll && currentScroll > 60) {
-        setHidden(true);
-      } else {
-        setHidden(false);
-      }
-      setLastScroll(currentScroll);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [lastScroll]);
 
   return (
-    <nav className={`w-full border-b border-neutral-800 bg-black transition-transform duration-300 ${hidden ? '-translate-y-full' : 'translate-y-0'} fixed top-0 left-0 z-40`}>
+    <nav className="w-full border-b border-neutral-800 bg-black fixed top-0 left-0 z-40">
       <div className="flex items-center justify-between py-4 px-4 md:px-8">
         <div className="flex items-center gap-3">
           <img src={logo} alt="Noiseport Logo" className="h-12 w-12 object-contain" />

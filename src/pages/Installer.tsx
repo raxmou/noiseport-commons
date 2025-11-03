@@ -25,14 +25,6 @@ export default function Installer() {
             transition={{ duration: 0.7 }}
           >
             <section id="overview" className="scroll-mt-24">
-              <motion.h1
-                className="font-kode text-3xl md:text-5xl mb-8 text-neutral-100"
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
-              >
-                Installer NoisePort
-              </motion.h1>
               <div className="mb-8">
                 <p className="text-neutral-200">
                   NoisePort est un écosystème libre et open-source pour reprendre le
