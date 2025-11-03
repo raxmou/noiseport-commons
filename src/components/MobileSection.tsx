@@ -25,9 +25,15 @@ const mobileScreenshots = [
 export default function MobileSection() {
   return (
     <>
-      <p>
-        Vous pouvez télécharger la version <strong>Android</strong> directement
-        ici&nbsp;:
+      <section id="mobile" className="scroll-mt-24">
+        <h2 className="font-kode text-2xl md:text-3xl mb-4 mt-10 text-neutral-100">
+          Application Mobile
+        </h2>
+      </section>
+      <section id="mobile-install">
+        <p>
+          Vous pouvez télécharger la version <strong>Android</strong> directement
+          ici&nbsp;:
         <br />
         <br />
         <ApkDownloadButton />
@@ -82,10 +88,13 @@ export default function MobileSection() {
         <b>Remerciements&nbsp;:</b> Un grand merci aux développeurs actifs de
         Finamp pour leur travail et leur engagement open-source.
       </div>
-      <h2 className="font-kode text-2xl md:text-3xl mt-10 mb-4">
-        Aperçu de l'application Mobile
-      </h2>
-      <ScreenshotCarousel images={mobileScreenshots} />
+      </section>
+      <section id="mobile-screenshots" className="scroll-mt-24">
+        <h2 className="font-kode text-2xl md:text-3xl mt-10 mb-4">
+          Aperçu de l'application Mobile
+        </h2>
+        <ScreenshotCarousel images={mobileScreenshots} />
+      </section>
     </>
   );
 }

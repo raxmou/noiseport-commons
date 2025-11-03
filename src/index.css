@@ -6,15 +6,51 @@ body {
   @apply bg-neutral-950 text-neutral-100 font-syne min-h-screen antialiased;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.font-kode {
-  /* @apply font-kode; */
+/* Light mode styles */
+html.light body {
+  @apply bg-white text-neutral-900;
 }
+
+html.light .bg-black {
+  @apply bg-neutral-100 border-neutral-300;
+}
+
+html.light .bg-neutral-900 {
+  @apply bg-neutral-50;
+}
+
+html.light .text-neutral-100 {
+  @apply text-neutral-900;
+}
+
+html.light .text-neutral-200 {
+  @apply text-neutral-800;
+}
+
+html.light .text-neutral-300 {
+  @apply text-neutral-700;
+}
+
+html.light .text-neutral-400 {
+  @apply text-neutral-600;
+}
+
+html.light .border-neutral-800 {
+  @apply border-neutral-300;
+}
+
+html.light .hover\:bg-neutral-900:hover {
+  @apply bg-neutral-200;
+}
+
+html.light .hover\:text-neutral-100:hover {
+  @apply text-neutral-900;
+}
+
+html.light .hover\:text-neutral-200:hover {
+  @apply text-neutral-800;
+}
+
 h1,
 h2,
 h3,
@@ -41,17 +77,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
