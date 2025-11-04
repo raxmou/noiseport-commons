@@ -42,24 +42,32 @@ html.light .bg-primary\/10 {
 }
 
 /* Text colors */
+html.light .text-neutral-50 {
+  color: rgb(38 38 38) !important;
+}
+
 html.light .text-neutral-100 {
-  @apply text-neutral-900;
+  color: rgb(23 23 23) !important;
 }
 
 html.light .text-neutral-200 {
-  @apply text-neutral-700;
+  color: rgb(64 64 64) !important;
 }
 
 html.light .text-neutral-300 {
-  @apply text-neutral-600;
+  color: rgb(82 82 82) !important;
 }
 
 html.light .text-neutral-400 {
-  @apply text-neutral-500;
+  color: rgb(115 115 115) !important;
 }
 
 html.light .text-neutral-800 {
-  @apply text-neutral-900;
+  color: rgb(23 23 23) !important;
+}
+
+html.light .text-neutral-950 {
+  color: white !important;
 }
 
 /* Borders */
@@ -134,20 +142,23 @@ html.light code {
   border-radius: 0.25rem;
 }
 
-/* Fix button backgrounds in light mode */
-html.light button {
+/* Fix button backgrounds in light mode - only for unstyled buttons */
+html.light button:not([class*="bg-"]):not([class*="text-"]) {
   background-color: #f5f5f5;
   color: #171717;
 }
 
-html.light button:hover {
+html.light button:not([class*="bg-"]):not([class*="text-"]):hover {
   background-color: #e5e5e5;
 }
 
-/* Override for primary buttons */
-html.light button.bg-primary {
+/* Override for primary buttons - ensure white text on primary background */
+html.light .bg-primary {
   background-color: #6867AF !important;
-  color: #0a0a0a !important;
+}
+
+html.light .text-neutral-950 {
+  color: white !important;
 }
 
 h1,
