@@ -43,6 +43,23 @@ export default function InstallerNavigation({ activeTab, onTabChange }: Installe
     }
   };
 
+  const handleSubsectionClick = (parentId: string, subsectionId: string) => {
+    // Determine which tab this subsection belongs to
+    const targetTab = parentId === 'apps' ? 'apps' : 'server';
+    
+    // If we're not on the right tab, switch first
+    if (activeTab !== targetTab) {
+      onTabChange(targetTab);
+      // Wait for the tab content to render before scrolling
+      setTimeout(() => {
+        scrollToSection(subsectionId);
+      }, 100);
+    } else {
+      // Already on the right tab, just scroll
+      scrollToSection(subsectionId);
+    }
+  };
+
   return (
     <nav className="bg-black border-r border-neutral-800 p-4 md:p-6 overflow-y-auto h-full sticky top-[73px]">
       <h2 className="font-kode text-lg mb-4 text-neutral-100">Navigation</h2>
@@ -73,7 +90,7 @@ export default function InstallerNavigation({ activeTab, onTabChange }: Installe
                 {item.subsections.map((sub) => (
                   <li key={sub.id}>
                     <button
-                      onClick={() => scrollToSection(sub.id)}
+                      onClick={() => handleSubsectionClick(item.id, sub.id)}
                       className="w-full text-left px-3 py-1.5 rounded text-sm text-neutral-400 hover:bg-neutral-900 hover:text-neutral-200 transition-colors duration-200 font-syne"
                     >
                       {sub.label}
