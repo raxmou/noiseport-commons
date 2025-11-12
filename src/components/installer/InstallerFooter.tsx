@@ -1,6 +1,6 @@
-export default function Footer() {
+export default function InstallerFooter() {
   return (
-    <footer className="w-full bg-black border-t border-neutral-800 px-4 md:px-8 py-6">
+    <footer className="bg-black border-t border-neutral-800 px-4 md:px-8 py-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
         <div className="text-center md:text-left text-xs font-syne text-neutral-400">
           <div className="mb-1">© 2025 NoisePort — open-source & indépendant</div>
