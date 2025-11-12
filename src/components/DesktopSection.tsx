@@ -20,22 +20,28 @@ const desktopScreenshots = [
 export default function DesktopSection() {
   return (
     <>
-      <p>
-        Vous pouvez télécharger les versions <strong>macOS</strong>,{" "}
-        <strong>Windows</strong>,<strong> Linux</strong> directement depuis
-        notre{" "}
-        <a
-          href="https://github.com/maxenceroux/noiseport/releases"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          page GitHub
-        </a>
-        .
-      </p>
-      <br />
-      <div className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200">
+      <section id="desktop" className="scroll-mt-24">
+        <h2 className="font-kode text-2xl md:text-3xl mb-4 text-neutral-100">
+          Application Desktop
+        </h2>
+      </section>
+      <section id="desktop-install">
+        <p>
+          Vous pouvez télécharger les versions <strong>macOS</strong>,{" "}
+          <strong>Windows</strong>,<strong> Linux</strong> directement depuis
+          notre{" "}
+          <a
+            href="https://github.com/maxenceroux/noiseport/releases"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline"
+          >
+            page GitHub
+          </a>
+          .
+        </p>
+        <br />
+        <div className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200">
         <strong>Comment choisir la bonne version&nbsp;?</strong>
         <br />
         <ul className="list-disc pl-5 mt-2 mb-2">
@@ -105,10 +111,13 @@ export default function DesktopSection() {
         ou à NoisePort&nbsp;: chaque contribution compte&nbsp;!
         <br />
       </div>
-      <h2 className="font-kode text-2xl md:text-3xl mt-10 mb-4">
-        Aperçu de l'application Desktop
-      </h2>
-      <ScreenshotCarousel images={desktopScreenshots} />
+      </section>
+      <section id="desktop-screenshots" className="scroll-mt-24">
+        <h2 className="font-kode text-2xl md:text-3xl mt-10 mb-4">
+          Aperçu de l'application Desktop
+        </h2>
+        <ScreenshotCarousel images={desktopScreenshots} />
+      </section>
     </>
   );
 }
