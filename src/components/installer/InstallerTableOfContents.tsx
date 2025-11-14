@@ -6,13 +6,13 @@ interface TocItem {
 }
 
 interface InstallerTableOfContentsProps {
-  activeTab: 'apps' | 'server';
+  activeTab: 'download' | 'join' | 'create';
 }
 
 export default function InstallerTableOfContents({ activeTab }: InstallerTableOfContentsProps) {
   const [activeSection, setActiveSection] = useState<string>('');
 
-  const appsTocItems: TocItem[] = [
+  const downloadTocItems: TocItem[] = [
     { id: 'desktop', label: 'Application Desktop' },
     { id: 'desktop-install', label: 'Installation Desktop' },
     { id: 'desktop-screenshots', label: 'Aperçu Desktop' },
@@ -21,7 +21,15 @@ export default function InstallerTableOfContents({ activeTab }: InstallerTableOf
     { id: 'mobile-screenshots', label: 'Aperçu Mobile' },
   ];
 
-  const serverTocItems: TocItem[] = [
+  const joinTocItems: TocItem[] = [
+    { id: 'prerequisites', label: 'Informations nécessaires' },
+    { id: 'tailscale-macos', label: 'Installation macOS' },
+    { id: 'tailscale-windows', label: 'Installation Windows' },
+    { id: 'tailscale-android', label: 'Installation Android' },
+    { id: 'connect-noiseport', label: 'Connexion à NoisePort' },
+  ];
+
+  const createTocItems: TocItem[] = [
     { id: 'choose-machine', label: '1. Choisir la machine' },
     { id: 'install-docker', label: '2. Installer Docker' },
     { id: 'get-code', label: '3. Récupérer le code' },
@@ -30,7 +38,7 @@ export default function InstallerTableOfContents({ activeTab }: InstallerTableOf
     { id: 'wizard-preview', label: 'Aperçu de l\'assistant' },
   ];
 
-  const tocItems = activeTab === 'apps' ? appsTocItems : serverTocItems;
+  const tocItems = activeTab === 'download' ? downloadTocItems : activeTab === 'join' ? joinTocItems : createTocItems;
 
   useEffect(() => {
     const observer = new IntersectionObserver(

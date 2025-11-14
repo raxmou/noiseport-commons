@@ -5,48 +5,69 @@ interface NavigationItem {
 }
 
 const navigationItems: NavigationItem[] = [
-  { 
-    id: 'overview', 
-    label: 'Vue d\'ensemble',
+  {
+    id: "overview",
+    label: "Vue d'ensemble",
   },
   {
-    id: 'apps',
-    label: 'Applications',
+    id: "download",
+    label: "Télécharger l'application",
     subsections: [
-      { id: 'desktop', label: 'Desktop' },
-      { id: 'mobile', label: 'Mobile' },
+      { id: "desktop", label: "Desktop" },
+      { id: "mobile", label: "Mobile" },
     ],
   },
   {
-    id: 'server',
-    label: 'Serveur',
+    id: "join",
+    label: "Rejoindre un serveur",
     subsections: [
-      { id: 'choose-machine', label: 'Choisir la machine' },
-      { id: 'install-docker', label: 'Installer Docker' },
-      { id: 'get-code', label: 'Récupérer le code' },
-      { id: 'install-make', label: 'Installer make' },
-      { id: 'run-wizard', label: 'Lancer l\'assistant' },
+      { id: "prerequisites", label: "Informations nécessaires" },
+      { id: "tailscale-macos", label: "Installation macOS" },
+      { id: "tailscale-windows", label: "Installation Windows" },
+      { id: "tailscale-android", label: "Installation Android" },
+      { id: "connect-noiseport", label: "Connexion à NoisePort" },
+    ],
+  },
+  {
+    id: "create",
+    label: "Créer un serveur",
+    subsections: [
+      { id: "choose-machine", label: "Choisir la machine" },
+      { id: "install-docker", label: "Installer Docker" },
+      { id: "get-code", label: "Récupérer le code" },
+      { id: "install-make", label: "Installer make" },
+      { id: "run-wizard", label: "Lancer l'assistant" },
     ],
   },
 ];
 
 interface InstallerNavigationProps {
-  activeTab: 'apps' | 'server';
-  onTabChange: (tab: 'apps' | 'server') => void;
+  activeTab: "download" | "join" | "create";
+  onTabChange: (tab: "download" | "join" | "create") => void;
 }
 
-export default function InstallerNavigation({ activeTab, onTabChange }: InstallerNavigationProps) {
+export default function InstallerNavigation({
+  activeTab,
+  onTabChange,
+}: InstallerNavigationProps) {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
 
   const handleSubsectionClick = (parentId: string, subsectionId: string) => {
     // Determine which tab this subsection belongs to
-    const targetTab = parentId === 'apps' ? 'apps' : 'server';
-    
+    let targetTab: "download" | "join" | "create" = "download";
+    if (parentId === "download") {
+      targetTab = "download";
+    } else if (parentId === "join") {
+      targetTab = "join";
+    } else if (parentId === "create") {
+      targetTab = "create";
+    }
+
     // If we're not on the right tab, switch first
     if (activeTab !== targetTab) {
       onTabChange(targetTab);
@@ -61,26 +82,29 @@ export default function InstallerNavigation({ activeTab, onTabChange }: Installe
   };
 
   return (
-    <nav className="bg-black border-r border-neutral-800 p-4 md:p-6 overflow-y-auto h-full sticky top-[73px]">
+    <nav className="bg-black border-r border-neutral-800 p-4 md:p-6 overflow-y-auto h-full">
       <h2 className="font-kode text-lg mb-4 text-neutral-100">Navigation</h2>
       <ul className="space-y-2">
         {navigationItems.map((item) => (
           <li key={item.id}>
             <button
               onClick={() => {
-                if (item.id === 'apps') {
-                  onTabChange('apps');
-                } else if (item.id === 'server') {
-                  onTabChange('server');
+                if (item.id === "download") {
+                  onTabChange("download");
+                } else if (item.id === "join") {
+                  onTabChange("join");
+                } else if (item.id === "create") {
+                  onTabChange("create");
                 } else {
                   scrollToSection(item.id);
                 }
               }}
               className={`w-full text-left px-3 py-2 rounded transition-colors duration-200 font-syne ${
-                (item.id === 'apps' && activeTab === 'apps') || 
-                (item.id === 'server' && activeTab === 'server')
-                  ? 'bg-primary text-neutral-950 font-bold'
-                  : 'text-neutral-300 hover:bg-neutral-900 hover:text-neutral-100'
+                (item.id === "download" && activeTab === "download") ||
+                (item.id === "join" && activeTab === "join") ||
+                (item.id === "create" && activeTab === "create")
+                  ? "bg-primary text-neutral-950 font-bold"
+                  : "text-neutral-300 hover:bg-neutral-900 hover:text-neutral-100"
               }`}
             >
               {item.label}

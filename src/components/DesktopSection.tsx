@@ -40,77 +40,104 @@ export default function DesktopSection() {
           </a>
           .
         </p>
+
         <br />
         <div className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200">
-        <strong>Comment choisir la bonne version&nbsp;?</strong>
-        <br />
-        <ul className="list-disc pl-5 mt-2 mb-2">
-          <li>
-            <b>macOS</b> : Téléchargez le fichier <code>.dmg</code> (ex:{" "}
-            <code>NoisePort-x.x.x.dmg</code>). Double-cliquez pour installer
-            comme une application classique.
-          </li>
-          <li>
-            <b>Windows</b> : Téléchargez le fichier <code>.exe</code> (ex:{" "}
-            <code>NoisePort-x.x.x.exe</code>). Double-cliquez pour lancer
-            l'installation.
-          </li>
-          <li>
-            <b>Linux</b> : Choisissez le fichier <code>.AppImage</code>{" "}
-            (universel), ou <code>.deb</code> si vous êtes sur Ubuntu/Debian.
-            Pour <code>.AppImage</code>, rendez-le exécutable puis
-            double-cliquez.
-          </li>
-        </ul>
-        <b>Astuce&nbsp;:</b> La dernière version est toujours en haut de la
-        liste sur la page GitHub.
-        <br />
-        <b>Besoin d'aide&nbsp;?</b> Contactez-moi via la page{" "}
-        <a href="/contact" className="text-primary underline">
-          Contact
-        </a>{" "}
-        si vous avez un doute ou une question.
-      </div>
-      <div className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 border border-primary">
-        <strong>À propos de l'application Desktop</strong>
-        <br />
-        NoisePort est un <b>fork</b> du projet open-source{" "}
-        <a
-          href="https://github.com/jeffvli/feishin"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          Feishin
-        </a>
-        .<br />
-        <b>Qu'est-ce qu'un fork&nbsp;?</b> C'est une copie d'un projet existant,
-        permettant d'ajouter des fonctionnalités ou d'adapter le logiciel à
-        d'autres besoins, tout en gardant l'évolution du projet d'origine.
-        <br />
-        NoisePort Desktop inclut <b>toutes les fonctionnalités de Feishin</b>.
-        <br />
-        J'ai ajouté la <b>connexion à Soulseek</b>, les pages <b>Discover</b>,
-        le <b>suivi des recherches</b> et le <b>téléchargement Soulseek</b>{" "}
-        directement dans l'application.
-        <br />
-        Je tiens à <b>remercier énormément</b> tous les contributeurs de Feishin
-        pour leur travail exceptionnel.
-        <br />
-        NoisePort suit de près les mises à jour de Feishin pour rester à jour.
-        <br />
-        <b>Envie d'aider&nbsp;?</b> Vous pouvez contribuer à{" "}
-        <a
-          href="https://github.com/jeffvli/feishin"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-primary underline"
-        >
-          Feishin
-        </a>{" "}
-        ou à NoisePort&nbsp;: chaque contribution compte&nbsp;!
-        <br />
-      </div>
+          <strong>Comment choisir la bonne version&nbsp;?</strong>
+          <br />
+          <ul className="list-disc pl-5 mt-2 mb-2">
+            <li>
+              <b>macOS</b> : Téléchargez le fichier <code>.dmg</code> (ex:{" "}
+              <code>NoisePort-x.x.x.dmg</code>). Double-cliquez pour installer
+              comme une application classique.
+            </li>
+            <li>
+              <b>Windows</b> : Téléchargez le fichier <code>.exe</code> (ex:{" "}
+              <code>NoisePort-x.x.x.exe</code>). Double-cliquez pour lancer
+              l'installation.
+            </li>
+            <li>
+              <b>Linux</b> : Choisissez le fichier <code>.AppImage</code>{" "}
+              (universel), ou <code>.deb</code> si vous êtes sur Ubuntu/Debian.
+              Pour <code>.AppImage</code>, rendez-le exécutable puis
+              double-cliquez.
+            </li>
+          </ul>
+          <b>Astuce&nbsp;:</b> La dernière version est toujours en haut de la
+          liste sur la page GitHub.
+          <br />
+          <div className="bg-yellow-900/80 border border-yellow-600 rounded p-3 my-4 text-yellow-200">
+            <b>Note&nbsp;:</b> Il est probable que votre système d'exploitation
+            (macOS, Windows, Linux) refuse d'ouvrir l'application car elle ne
+            provient pas d'un store agréé ou d'un développeur identifié.
+            <br />
+            <b>Vous devrez autoriser l'accès&nbsp;:</b>
+            <ul className="list-disc pl-5 mt-2 mb-2">
+              <li>
+                <b>macOS</b> : Faites un clic droit sur l'application puis
+                "Ouvrir" et confirmez. Si cela ne fonctionne pas, allez dans{" "}
+                <b>Réglages Système &gt; Sécurité et confidentialité</b> (ou{" "}
+                <b>Préférences Système &gt; Sécurité et confidentialité</b>{" "}
+                selon la version), puis cliquez sur "Ouvrir quand même" pour
+                autoriser l'application.
+              </li>
+              <li>
+                <b>Windows</b> : Cliquez sur "Informations complémentaires" puis
+                "Exécuter quand même".
+              </li>
+              <li>
+                <b>Linux</b> : Vérifiez les permissions d'exécution.
+              </li>
+            </ul>
+            <b>Si vous avez un doute, contactez-moi&nbsp;!</b>
+          </div>
+          <b>Besoin d'aide&nbsp;?</b> Contactez-moi via la page{" "}
+          <a href="/contact" className="text-primary underline">
+            Contact
+          </a>{" "}
+          si vous avez un doute ou une question.
+        </div>
+        <div className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 border border-primary">
+          <strong>À propos de l'application Desktop</strong>
+          <br />
+          NoisePort est un <b>fork</b> du projet open-source{" "}
+          <a
+            href="https://github.com/jeffvli/feishin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline"
+          >
+            Feishin
+          </a>
+          .<br />
+          <b>Qu'est-ce qu'un fork&nbsp;?</b> C'est une copie d'un projet
+          existant, permettant d'ajouter des fonctionnalités ou d'adapter le
+          logiciel à d'autres besoins, tout en gardant l'évolution du projet
+          d'origine.
+          <br />
+          NoisePort Desktop inclut <b>toutes les fonctionnalités de Feishin</b>.
+          <br />
+          J'ai ajouté la <b>connexion à Soulseek</b>, les pages <b>Discover</b>,
+          le <b>suivi des recherches</b> et le <b>téléchargement Soulseek</b>{" "}
+          directement dans l'application.
+          <br />
+          Je tiens à <b>remercier énormément</b> tous les contributeurs de
+          Feishin pour leur travail exceptionnel.
+          <br />
+          NoisePort suit de près les mises à jour de Feishin pour rester à jour.
+          <br />
+          <b>Envie d'aider&nbsp;?</b> Vous pouvez contribuer à{" "}
+          <a
+            href="https://github.com/jeffvli/feishin"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline"
+          >
+            Feishin
+          </a>{" "}
+          ou à NoisePort&nbsp;: chaque contribution compte&nbsp;!
+          <br />
+        </div>
       </section>
       <section id="desktop-screenshots" className="scroll-mt-24">
         <h2 className="font-kode text-2xl md:text-3xl mt-10 mb-4">
