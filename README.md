@@ -1,6 +1,6 @@
 # NoisePort Commons
 
-Official website and manifesto for NoisePort.
+Official website, manifesto and installer for NoisePort.
 
 ## What is NoisePort?
 
