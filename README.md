@@ -1,67 +1,70 @@
 # NoisePort Commons
 
-Ce dépôt contient le site public et le manifeste de NoisePort.
+Official website and manifesto for NoisePort.
+
+## What is NoisePort?
+
+**NoisePort** is a free and open-source ecosystem to take back control of your music.
+
+It consists of two main components:
+- **NoisePort App** — Desktop and mobile application to listen, manage your self-hosted music library, explore discographies, and download albums via the Soulseek network
+- **NoisePort Server** — Self-hosted server that can be deployed on a Raspberry Pi, old computer, or cloud hosting to make your music accessible everywhere
+
+NoisePort lets you own your music library and stream it anywhere, without relying on commercial platforms or algorithms.
+
+## Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
 
 ## Tech Stack
-- React + TypeScript + Vite
-- Tailwind CSS (typography plugin)
-- Framer Motion
-- React Router DOM
-- Google Fonts: Kode Mono (titres/logo), Syne (texte)
 
-## Fonctionnalités
-- Thème sombre (bg-neutral-950, text-neutral-100)
-- Layout responsive
-- Animations fluides (Framer Motion)
-- 4 routes :
-  - `/` — Accueil
-  - `/manifeste` — Manifeste
-  - `/installer` — Guide d’installation
+- **React** + **TypeScript** + **Vite**
+- **Tailwind CSS** (with typography plugin)
+- **Framer Motion** (animations)
+- **React Router DOM** (routing)
+- **Google Fonts**: Kode Mono (headings/logo), Syne (body text)
+
+## Project Structure
+
+```
+src/
+├── components/      # Reusable UI components
+├── pages/          # Route pages (Home, Manifeste, Installer, Contact)
+├── contexts/       # React contexts (ThemeContext)
+└── assets/         # Images and static files
+```
+
+## Features
+
+- Dark theme with neutral palette
+- Fully responsive layout
+- Smooth animations with Framer Motion
+- Multi-page routing:
+  - `/` — Home
+  - `/manifeste` — Manifesto
+  - `/installer` — Installation guide
   - `/contact` — Contact
-- Composants NavBar et Footer réutilisables
 
-## Déploiement
-Le site est statique, généré dans `/dist`.
-Prêt pour GitHub Pages, Cloudflare Pages, ou Nginx.
+## Deployment
 
-## Scripts
-- `npm run dev` — développement
-- `npm run build` — build production
-- `npm run preview` — prévisualisation
+The site is static and builds to `/dist`. Ready for deployment on:
+- GitHub Pages
+- Cloudflare Pages
+- Netlify
+- Any static hosting or Nginx server
 
-## Footer
-© 2025 Noiseport — open-source & indépendant
-Construit avec React · Typo Kode Mono & Syne
-    },
-  },
-])
-```
+## License
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+© 2025 NoisePort — Open-source & independent
