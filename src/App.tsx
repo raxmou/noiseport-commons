@@ -1,12 +1,11 @@
-
-import { Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './contexts/ThemeContext';
-import NavBar from './components/NavBar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import Manifeste from './pages/Manifeste';
-import Installer from './pages/Installer';
-import Contact from './pages/Contact';
+import { Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Manifeste from "./pages/Manifeste";
+import Installer from "./pages/Installer";
+import Contact from "./pages/Contact";
 
 function App() {
   return (

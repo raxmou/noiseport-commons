@@ -77,7 +77,10 @@ export default function Installer() {
               </div>
             </section>
 
-            <div id="download" className="flex flex-col sm:flex-row gap-2 sm:gap-4 mb-6 md:mb-8 scroll-mt-24">
+            <div
+              id="download"
+              className="flex flex-col sm:flex-row gap-2 sm:gap-4 mb-6 md:mb-8 scroll-mt-24"
+            >
               <button
                 className={`inline-flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2 rounded font-kode text-sm sm:text-base md:text-lg transition-colors duration-200 ${
                   tab === "download"

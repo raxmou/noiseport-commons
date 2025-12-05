@@ -1,6 +1,5 @@
-
-import logo from '../assets/logo.png';
-import { motion } from 'framer-motion';
+import logo from "../assets/logo.png";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -32,7 +31,8 @@ export default function Home() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.7 }}
       >
-        NoisePort est une plateforme libre pour héberger, écouter et partager sa musique. <br />
+        NoisePort est une plateforme libre pour héberger, écouter et partager sa
+        musique. <br />
         Hors des plateformes. Hors des algorithmes.
       </motion.p>
       <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto">
@@ -55,6 +55,6 @@ export default function Home() {
           Installer
         </motion.a>
       </div>
-  </motion.main>
+    </motion.main>
   );
 }

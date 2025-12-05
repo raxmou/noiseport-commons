@@ -25,7 +25,10 @@ export default function ServerSection() {
         (Windows, macOS, Linux) et sur la machine de votre choix.
         <br />
       </div>
-      <div id="choose-machine" className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24">
+      <div
+        id="choose-machine"
+        className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24"
+      >
         <strong>1. Choisir la machine pour héberger NoisePort Server</strong>
         <br />
         NoisePort Server peut être installé sur différents types de machines
@@ -68,7 +71,10 @@ export default function ServerSection() {
           (Raspberry Pi, serveur cloud, ordinateur, etc).
         </span>
       </div>
-      <div id="install-docker" className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24">
+      <div
+        id="install-docker"
+        className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24"
+      >
         <strong>2. Installer la dernière version de Docker</strong>
         <br />
         Docker est nécessaire pour faire tourner NoisePort Server facilement.
@@ -94,7 +100,10 @@ export default function ServerSection() {
         macOS, sur Linux suivez le guide pour votre distribution.
         <br />
       </div>
-      <div id="get-code" className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24">
+      <div
+        id="get-code"
+        className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24"
+      >
         <strong>3. Récupérer le code de NoisePort Server</strong>
         <br />
         Deux méthodes sont possibles&nbsp;:
@@ -141,7 +150,10 @@ export default function ServerSection() {
         <br />
       </div>
 
-      <div id="install-make" className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 scroll-mt-24">
+      <div
+        id="install-make"
+        className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 scroll-mt-24"
+      >
         <strong>
           4. Installer l'outil <code>make</code> (optionnel)
         </strong>
@@ -194,7 +206,10 @@ export default function ServerSection() {
         <b>Astuce&nbsp;:</b> Vérifiez l'installation en tapant{" "}
         <code>make --version</code> dans le terminal.
       </div>
-      <div id="run-wizard" className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 scroll-mt-24">
+      <div
+        id="run-wizard"
+        className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 scroll-mt-24"
+      >
         <strong>5. Lancer l'assistant d'installation</strong>
         <br />
         Cette étape va télécharger et initialiser les conteneurs nécessaires à
@@ -233,7 +248,10 @@ export default function ServerSection() {
         Vous pourrez alors commencer la configuration de NoisePort Server via
         l'assistant.
       </div>
-      <div id="wizard-preview" className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 border border-primary scroll-mt-24">
+      <div
+        id="wizard-preview"
+        className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 border border-primary scroll-mt-24"
+      >
         <h2 className="font-kode text-2xl md:text-3xl mt-6 mb-4 text-neutral-100">
           Aperçu de l'assistant d'installation
         </h2>
