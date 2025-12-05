@@ -33,7 +33,7 @@ export default function Home() {
       >
         NoisePort est une plateforme libre pour héberger, écouter et partager sa
         musique. <br />
-        Hors des plateformes. Hors des algorithmes.
+        En commun, hors des plateformes, hors des algorithmes.
       </motion.p>
       <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto">
         <motion.a
