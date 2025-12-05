@@ -36,9 +36,9 @@ export default function Installer() {
   };
 
   return (
-    <div className="flex min-h-screen bg-neutral-950 pt-[73px]">
+    <div className="flex min-h-screen bg-neutral-950">
       {/* Left Navigation - Hidden on mobile, visible on md+ */}
-      <div className="hidden md:block w-64 overflow-y-auto fixed left-0 top-[73px] bottom-0">
+      <div className="hidden md:block w-64 overflow-y-auto fixed left-0 top-20 md:top-24 bottom-0">
         <InstallerNavigation activeTab={tab} onTabChange={setTab} />
       </div>
 
@@ -51,15 +51,15 @@ export default function Installer() {
             transition={{ duration: 0.7 }}
           >
             <section id="overview" className="scroll-mt-24">
-              <div className="mb-8">
-                <p className="text-neutral-200">
+              <div className="mb-6 md:mb-8">
+                <p className="text-sm md:text-base text-neutral-200 leading-relaxed">
                   NoisePort est un écosystème libre et open-source pour
                   reprendre le contrôle de sa musique. Il se compose de deux
                   éléments&nbsp;:
                   <br />
                   <br />
                 </p>
-                <ul className="list-disc pl-5 space-y-2 text-neutral-200">
+                <ul className="list-disc pl-5 space-y-2 text-sm md:text-base text-neutral-200">
                   <li>
                     <strong>NoisePort</strong> — l'application <em>desktop</em>{" "}
                     et <em>mobile</em> qui permet d'écouter, gérer votre
@@ -77,9 +77,9 @@ export default function Installer() {
               </div>
             </section>
 
-            <div id="download" className="flex gap-4 mb-8 scroll-mt-24">
+            <div id="download" className="flex flex-col sm:flex-row gap-2 sm:gap-4 mb-6 md:mb-8 scroll-mt-24">
               <button
-                className={`px-4 py-2 rounded font-kode text-lg transition-colors duration-200 ${
+                className={`inline-flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2 rounded font-kode text-sm sm:text-base md:text-lg transition-colors duration-200 ${
                   tab === "download"
                     ? "bg-primary text-neutral-950"
                     : "bg-neutral-800 text-neutral-300 hover:bg-neutral-700"
@@ -89,7 +89,7 @@ export default function Installer() {
                 Télécharger l'application
               </button>
               <button
-                className={`px-4 py-2 rounded font-kode text-lg transition-colors duration-200 ${
+                className={`inline-flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2 rounded font-kode text-sm sm:text-base md:text-lg transition-colors duration-200 ${
                   tab === "join"
                     ? "bg-primary text-neutral-950"
                     : "bg-neutral-800 text-neutral-300 hover:bg-neutral-700"
@@ -99,7 +99,7 @@ export default function Installer() {
                 Rejoindre un serveur
               </button>
               <button
-                className={`px-4 py-2 rounded font-kode text-lg transition-colors duration-200 ${
+                className={`inline-flex items-center justify-center px-3 py-2 sm:px-4 sm:py-2 rounded font-kode text-sm sm:text-base md:text-lg transition-colors duration-200 ${
                   tab === "create"
                     ? "bg-primary text-neutral-950"
                     : "bg-neutral-800 text-neutral-300 hover:bg-neutral-700"
@@ -120,7 +120,7 @@ export default function Installer() {
       </main>
 
       {/* Right Table of Contents - Hidden on mobile and tablet, visible on lg+ */}
-      <div className="hidden lg:block w-64 overflow-y-auto fixed right-0 top-[73px] bottom-0">
+      <div className="hidden lg:block w-64 overflow-y-auto fixed right-0 top-20 md:top-24 bottom-0">
         <InstallerTableOfContents activeTab={tab} />
       </div>
     </div>

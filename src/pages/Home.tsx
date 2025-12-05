@@ -27,7 +27,7 @@ export default function Home() {
         NoisePort
       </motion.h1>
       <motion.p
-        className="font-syne text-lg md:text-2xl mb-8 max-w-4xl text-neutral-300"
+        className="font-syne text-base md:text-2xl mb-6 md:mb-8 max-w-4xl text-neutral-300 leading-relaxed"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.7 }}
@@ -35,10 +35,10 @@ export default function Home() {
         NoisePort est une plateforme libre pour héberger, écouter et partager sa musique. <br />
         Hors des plateformes. Hors des algorithmes.
       </motion.p>
-      <div className="flex flex-row gap-4 justify-center">
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center w-full sm:w-auto">
         <motion.a
           href="/manifeste"
-          className="inline-block px-6 py-3 rounded bg-primary text-neutral-950 font-kode text-lg shadow hover:bg-primary/80 transition-colors"
+          className="inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 rounded bg-primary text-neutral-950 font-kode text-base sm:text-lg shadow hover:bg-primary/80 transition-colors"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 0.5 }}
@@ -47,7 +47,7 @@ export default function Home() {
         </motion.a>
         <motion.a
           href="/installer"
-          className="inline-block px-6 py-3 rounded bg-primary text-neutral-950 font-kode text-lg shadow hover:bg-primary/80 transition-colors"
+          className="inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 rounded bg-primary text-neutral-950 font-kode text-base sm:text-lg shadow hover:bg-primary/80 transition-colors"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.8, duration: 0.5 }}

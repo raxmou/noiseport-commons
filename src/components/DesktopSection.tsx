@@ -21,7 +21,7 @@ export default function DesktopSection() {
   return (
     <>
       <section id="desktop" className="scroll-mt-24">
-        <h2 className="font-kode text-2xl md:text-3xl mb-4 text-neutral-100">
+        <h2 className="font-kode text-xl md:text-2xl lg:text-3xl mb-3 md:mb-4 text-neutral-100">
           Application Desktop
         </h2>
       </section>
@@ -42,7 +42,7 @@ export default function DesktopSection() {
         </p>
 
         <br />
-        <div className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200">
+        <div className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200">
           <strong>Comment choisir la bonne version&nbsp;?</strong>
           <br />
           <ul className="list-disc pl-5 mt-2 mb-2">

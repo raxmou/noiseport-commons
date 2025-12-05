@@ -5,11 +5,11 @@ import registrationCommandAndroid from "../assets/registration-command.jpg";
 export default function JoinServerSection() {
   return (
     <section id="join-server">
-      <h2 className="font-kode text-2xl md:text-3xl mb-4 text-neutral-100">
+      <h2 className="font-kode text-xl md:text-2xl lg:text-3xl mb-3 md:mb-4 text-neutral-100">
         Rejoindre un serveur NoisePort
       </h2>
-      <div className="gap-4 mb-8">
-        <p className="text-neutral-200">
+      <div className="gap-4 mb-6 md:mb-8">
+        <p className="text-sm md:text-base text-neutral-200 leading-relaxed">
           Pour rejoindre un serveur NoisePort existant, vous devez vous
           connecter au réseau privé sécurisé qui héberge le serveur.
           <br />
@@ -23,7 +23,7 @@ export default function JoinServerSection() {
 
       <div
         id="prerequisites"
-        className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 scroll-mt-24"
+        className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24"
       >
         <strong>Informations nécessaires</strong>
         <br />
@@ -55,7 +55,7 @@ export default function JoinServerSection() {
 
       <div
         id="tailscale-macos"
-        className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 scroll-mt-24"
+        className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24"
       >
         <strong>Installation sur macOS</strong>
         <br />

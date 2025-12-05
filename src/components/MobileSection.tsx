@@ -26,7 +26,7 @@ export default function MobileSection() {
   return (
     <>
       <section id="mobile" className="scroll-mt-24">
-        <h2 className="font-kode text-2xl md:text-3xl mb-4 mt-10 text-neutral-100">
+        <h2 className="font-kode text-xl md:text-2xl lg:text-3xl mb-3 md:mb-4 mt-6 md:mt-10 text-neutral-100">
           Application Mobile
         </h2>
       </section>
@@ -62,7 +62,7 @@ export default function MobileSection() {
         pour un projet open-source et gratuit.
       </p>
       <br />
-      <div className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 border border-primary">
+      <div className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 border border-primary">
         <strong>À propos de l'application Mobile</strong>
         <br />
         L'application mobile NoisePort est un <b>fork</b> du projet open-source{" "}
@@ -90,7 +90,7 @@ export default function MobileSection() {
       </div>
       </section>
       <section id="mobile-screenshots" className="scroll-mt-24">
-        <h2 className="font-kode text-2xl md:text-3xl mt-10 mb-4">
+        <h2 className="font-kode text-xl md:text-2xl lg:text-3xl mt-6 md:mt-10 mb-3 md:mb-4">
           Aperçu de l'application Mobile
         </h2>
         <ScreenshotCarousel images={mobileScreenshots} />

@@ -13,7 +13,7 @@ function App() {
     <ThemeProvider>
       <div className="flex flex-col min-h-screen bg-neutral-950 text-neutral-100 font-syne">
         <NavBar />
-        <div className="flex-1">
+        <div className="flex-1 pt-20 md:pt-24">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/manifeste" element={<Manifeste />} />

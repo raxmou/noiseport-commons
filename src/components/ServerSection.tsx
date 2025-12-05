@@ -3,10 +3,10 @@ import wizardScreenshot from "../assets/wizard-screenshot.png";
 export default function ServerSection() {
   return (
     <section>
-      <h2 className="font-kode text-2xl md:text-3xl mb-4 text-neutral-100">
+      <h2 className="font-kode text-xl md:text-2xl lg:text-3xl mb-3 md:mb-4 text-neutral-100">
         Déployer votre serveur
       </h2>
-      <div className="gap-4 mb-8">
+      <div className="gap-4 mb-6 md:mb-8">
         <em>
           C'est l'étape la plus technique du projet&nbsp;: il faudra utiliser un
           peu le terminal de commandes.
@@ -25,7 +25,7 @@ export default function ServerSection() {
         (Windows, macOS, Linux) et sur la machine de votre choix.
         <br />
       </div>
-      <div id="choose-machine" className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 scroll-mt-24">
+      <div id="choose-machine" className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24">
         <strong>1. Choisir la machine pour héberger NoisePort Server</strong>
         <br />
         NoisePort Server peut être installé sur différents types de machines
@@ -60,7 +60,7 @@ export default function ServerSection() {
           </p>
         </div>
       </div>
-      <div className="bg-primary/10 border-l-4 border-primary rounded p-4 mb-6 text-sm text-primary font-bold">
+      <div className="bg-primary/10 border-l-4 border-primary rounded p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-primary font-bold">
         <span>
           <b>Important&nbsp;:</b> À partir d'ici, toutes les étapes suivantes
           doivent être réalisées sur{" "}
@@ -68,7 +68,7 @@ export default function ServerSection() {
           (Raspberry Pi, serveur cloud, ordinateur, etc).
         </span>
       </div>
-      <div id="install-docker" className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 scroll-mt-24">
+      <div id="install-docker" className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24">
         <strong>2. Installer la dernière version de Docker</strong>
         <br />
         Docker est nécessaire pour faire tourner NoisePort Server facilement.
@@ -94,7 +94,7 @@ export default function ServerSection() {
         macOS, sur Linux suivez le guide pour votre distribution.
         <br />
       </div>
-      <div id="get-code" className="bg-neutral-900/80 rounded-lg p-4 mb-6 text-sm text-neutral-200 scroll-mt-24">
+      <div id="get-code" className="bg-neutral-900/80 rounded-lg p-3 md:p-4 mb-4 md:mb-6 text-xs md:text-sm text-neutral-200 scroll-mt-24">
         <strong>3. Récupérer le code de NoisePort Server</strong>
         <br />
         Deux méthodes sont possibles&nbsp;:
