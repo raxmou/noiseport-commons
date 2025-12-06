@@ -82,7 +82,7 @@ export default function JoinServerSection() {
         <br />
         <br />
         <code className="bg-neutral-800 px-2 py-1 rounded text-primary font-mono">
-          tailscale up --login-server=&lt;url_du_serveur&gt; --authkey
+          tailscale up --login-server &lt;url_du_serveur&gt; --authkey
           &lt;clé_d'authentification&gt;
         </code>
         <br />
@@ -155,7 +155,7 @@ export default function JoinServerSection() {
         <br />
         <br />
         <code className="bg-neutral-800 px-2 py-1 rounded text-primary font-mono">
-          tailscale up --login-server=&lt;url_du_serveur&gt; --authkey
+          tailscale up --login-server &lt;url_du_serveur&gt; --authkey
           &lt;clé_d'authentification&gt;
         </code>
         <br />
