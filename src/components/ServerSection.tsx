@@ -114,7 +114,7 @@ export default function ServerSection() {
             <br />
             <br />
             <code className="bg-neutral-800 px-2 py-1 rounded text-primary font-mono">
-              git clone https://github.com/maxenceroux/noiseport-server.git
+              git clone https://github.com/raxmou/noiseport-server.git
             </code>
             <br />
             <br />
@@ -133,7 +133,7 @@ export default function ServerSection() {
             <b>Via téléchargement ZIP</b> :<br />
             Rendez-vous sur la page{" "}
             <a
-              href="https://github.com/maxenceroux/noiseport-server"
+              href="https://github.com/raxmou/noiseport-server"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary underline"

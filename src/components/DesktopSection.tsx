@@ -31,7 +31,7 @@ export default function DesktopSection() {
           <strong>Windows</strong>,<strong> Linux</strong> directement depuis
           notre{" "}
           <a
-            href="https://github.com/maxenceroux/noiseport/releases"
+            href="https://github.com/raxmou/noiseport/releases"
             target="_blank"
             rel="noopener noreferrer"
             className="text-primary underline"

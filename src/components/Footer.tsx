@@ -14,7 +14,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-6">
           <a
-            href="https://github.com/maxenceroux/noiseport"
+            href="https://github.com/raxmou/noiseport"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-400 hover:text-neutral-100 transition-colors duration-200"
