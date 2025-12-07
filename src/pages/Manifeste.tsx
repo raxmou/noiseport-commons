@@ -95,10 +95,10 @@ export default function Manifeste() {
       <p className="mb-8 text-base text-neutral-50">
         Soulseek n’est pas mort : des seeders éternel·les font encore vivre
         l’idée d’une culture partagée, sans centralisation, sans autorité, sans
-        algorithme. Alors m’est venue l’envie — oui, un peu geek — de redonner
-        ses lettres de noblesse à cette idée. Mais soyons honnêtes : son
-        interface appartient à un autre temps, et passer d’une appli à l’autre
-        pour écouter ou partager n’a rien d’idéal.
+        algorithme. Alors m’est venue l’envie — clairement une lubie geek — de
+        redonner ses lettres de noblesse à cette idée. Mais soyons clairs : son
+        interface est restée québlo en 2003, et devoir switcher d’appli juste
+        pour écouter ou télécharger, c’est un tue-l’amour total.
       </p>
       <h2 className="font-kode text-2xl text-primary mt-12 mb-4">
         Réconcilier confort et liberté — et vous donner les moyens d’être une
@@ -111,14 +111,14 @@ export default function Manifeste() {
       </p>
       <p className="mb-8 text-base text-neutral-50">
         Créer votre lieu commun : Noiseport vous accompagne pour déployer un
-        serveur (sur un Raspberry Pi, une machine oubliée ou un cloud éthique).
-        En quelques étapes guidées, vous installez, effectuez la configuration
-        réseau (oui, ouvrir les ports au bruit), et vous invitez jusqu’à 20
-        personnes : ami·es, collectif, label.
+        serveur (sur un Raspberry Pi, un ordinateur oubliée ou un cloud
+        éthique). En quelques étapes guidées, vous installez, effectuez la
+        configuration réseau (oui, on ouvre les ports au bruit), et vous invitez
+        jusqu’à 20 personnes : ami·es, collectif, label.
       </p>
       <p className="mb-8 text-base text-neutral-50">
         Rejoindre un cercle déjà formé : si un serveur existe déjà, l’app —
-        mobile et bureau — vous guide pas à pas pour le rejoindre en toute
+        mobile et ordi — vous guide pas à pas pour le rejoindre en toute
         simplicité.
       </p>
       <p className="mb-8 text-base text-neutral-50">
@@ -136,12 +136,12 @@ export default function Manifeste() {
         fasciste.
       </p>
       <p className="mb-8 text-base text-neutral-50">
-        Mais surtout, la communauté devient l’algorithme. Ici, pas de score
-        opaque ni de playlists à la chaîne : il y a des gestes, des attentions,
-        des personnes. On prend soin de la discothèque : on ajoute des sorties,
-        on réédite des pépites, on annote les albums, on laisse des contextes,
-        des portes d’entrée. On se passe un disque “pour toi”, on réactive un
-        catalogue oublié, on fait vivre des esthétiques minorées.
+        Surtout, ici, l’algorithme, c’est nous. Pas de score flou, pas de
+        “radios” automatiques : juste des gestes, des voix, des personnes. On
+        soigne la discothèque : on ajoute des nouveautés, on ressort des
+        dingueries oubliées, on annote les albums, on laisse des clés de
+        lecture. On se passe un disque “tiens, ça c’est pour toi”, on rouvre des
+        catalogues enterrés, on redonne de l’air aux esthétiques minorées.
         <br />
         Les collections fusionnent sans se dissoudre : chacun·e garde sa patte,
         le groupe compose une mémoire. La découverte redevient une conversation
