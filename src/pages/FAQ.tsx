@@ -347,7 +347,7 @@ docker exec headscale headscale nodes show --identifier {NODE_ID}`}
             </li>
             <li>
               <strong>Mobile apps</strong>:
-              <ul className="list-circle pl-6 mt-2">
+              <ul className="list-disc pl-6 mt-2">
                 <li>iOS: Substreamer, play:Sub, or Amperfy</li>
                 <li>Android: Ultrasonic, Subtracks, or DSub</li>
               </ul>
