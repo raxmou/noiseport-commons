@@ -5,9 +5,16 @@ import registrationCommandAndroid from "../assets/registration-command.jpg";
 export default function JoinServerSection() {
   return (
     <section id="join-server">
-      <h2 className="font-kode text-xl md:text-2xl lg:text-3xl mb-3 md:mb-4 text-neutral-100">
-        Rejoindre un serveur NoisePort
-      </h2>
+      <div className="mb-6 p-5 bg-primary/10 border-l-4 border-primary rounded-lg">
+        <h2 className="font-kode text-xl md:text-2xl lg:text-3xl mb-3 text-primary">
+          🎧 Rejoindre un serveur NoisePort
+        </h2>
+        <p className="text-sm md:text-base text-neutral-200">
+          Vous avez été invité à rejoindre un serveur NoisePort existant ?
+          Suivez ces étapes pour vous connecter et commencer à écouter de la
+          musique.
+        </p>
+      </div>
       <div className="gap-4 mb-6 md:mb-8">
         <p className="text-sm md:text-base text-neutral-200 leading-relaxed">
           Pour rejoindre un serveur NoisePort existant, vous devez vous

@@ -22,11 +22,9 @@ export default function Manifeste() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.05 }}
       >
-        <span className="font-bold text-primary">Noiseport</span>, c’est votre
-        discothèque partagée : un serveur et une application pour héberger votre
-        musique, la streamer ensemble et découvrir par les personnes — pas par
-        l’algorithme. Créez votre propre serveur (chez vous ou sur un cloud ),
-        invitez votre cercle, et faites vivre une bibliothèque commune.
+        <span className="font-bold text-primary">Noiseport</span> : ta bibliothèque musicale collective.
+        Auto-hébergée, libre, hors des algorithmes. Crée ton propre serveur (chez toi ou sur un cloud),
+        invite ton cercle, et fais vivre une bibliothèque commune.
       </motion.p>
       <br />
 

@@ -3,9 +3,15 @@ import wizardScreenshot from "../assets/wizard-screenshot.png";
 export default function ServerSection() {
   return (
     <section>
-      <h2 className="font-kode text-xl md:text-2xl lg:text-3xl mb-3 md:mb-4 text-neutral-100">
-        Déployer votre serveur
-      </h2>
+      <div className="mb-6 p-5 bg-primary/10 border-l-4 border-primary rounded-lg">
+        <h2 className="font-kode text-xl md:text-2xl lg:text-3xl mb-3 text-primary">
+          🚀 Créer votre propre serveur NoisePort
+        </h2>
+        <p className="text-sm md:text-base text-neutral-200">
+          Vous voulez héberger votre propre serveur de musique ? Déployez
+          NoisePort Server et partagez votre bibliothèque avec vos proches.
+        </p>
+      </div>
       <div className="gap-4 mb-6 md:mb-8">
         <em>
           C'est l'étape la plus technique du projet&nbsp;: il faudra utiliser un

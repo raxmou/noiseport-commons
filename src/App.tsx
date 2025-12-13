@@ -4,7 +4,10 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Manifeste from "./pages/Manifeste";
+import FAQ from "./pages/FAQ";
 import Installer from "./pages/Installer";
+import Rejoindre from "./pages/Rejoindre";
+import Creer from "./pages/Creer";
 import Contact from "./pages/Contact";
 
 function App() {
@@ -16,7 +19,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/manifeste" element={<Manifeste />} />
-            <Route path="/installer" element={<Installer />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/rejoindre" element={<Rejoindre />} />
+            <Route path="/creer" element={<Creer />} />
+            <Route path="/commencer" element={<Installer />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
