@@ -53,7 +53,7 @@ export default function Contact() {
           </p>
 
           <a
-            href="https://discord.gg/ton-lien-discord"
+            href="https://discord.gg/TejsH5wa8X"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-3 px-6 py-3 rounded-lg bg-primary hover:bg-primary/80 text-neutral-950 font-kode text-lg transition-all duration-300 no-underline hover:gap-4"

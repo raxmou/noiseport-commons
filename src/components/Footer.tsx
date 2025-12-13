@@ -30,7 +30,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://discord.gg/noiseport"
+            href="https://discord.gg/TejsH5wa8X"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-400 hover:text-neutral-100 transition-colors duration-200"

@@ -46,14 +46,13 @@ export default function Rejoindre() {
             </h1>
             <p className="text-base md:text-lg text-neutral-300 max-w-3xl mx-auto leading-relaxed">
               Tu as été invité·e à rejoindre un serveur NoisePort existant ?
-              Suis ces étapes pour télécharger l'application et te
-              connecter.
+              Suis ces étapes pour télécharger l'application et te connecter.
             </p>
           </div>
 
           {/* Steps Overview */}
           <div className="mb-8 md:mb-12 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="bg-neutral-900/50 border border-neutral-800 rounded-lg p-4 md:p-6">
+            <a href="#download" className="bg-neutral-900/50 border border-neutral-800 hover:border-primary/50 rounded-lg p-4 md:p-6 transition-colors cursor-pointer">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-8 h-8 rounded-full bg-primary text-neutral-950 flex items-center justify-center font-kode font-bold">
                   1
@@ -63,8 +62,8 @@ export default function Rejoindre() {
               <p className="text-sm text-neutral-400">
                 Installez l'application NoisePort sur votre appareil
               </p>
-            </div>
-            <div className="bg-neutral-900/50 border border-neutral-800 rounded-lg p-4 md:p-6">
+            </a>
+            <a href="#join-server" className="bg-neutral-900/50 border border-neutral-800 hover:border-primary/50 rounded-lg p-4 md:p-6 transition-colors cursor-pointer">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-8 h-8 rounded-full bg-primary text-neutral-950 flex items-center justify-center font-kode font-bold">
                   2
@@ -76,8 +75,8 @@ export default function Rejoindre() {
               <p className="text-sm text-neutral-400">
                 Rejoignez le réseau privé sécurisé avec Tailscale
               </p>
-            </div>
-            <div className="bg-neutral-900/50 border border-neutral-800 rounded-lg p-4 md:p-6">
+            </a>
+            <a href="#connect-noiseport" className="bg-neutral-900/50 border border-neutral-800 hover:border-primary/50 rounded-lg p-4 md:p-6 transition-colors cursor-pointer">
               <div className="flex items-center gap-3 mb-2">
                 <div className="w-8 h-8 rounded-full bg-primary text-neutral-950 flex items-center justify-center font-kode font-bold">
                   3
@@ -87,7 +86,7 @@ export default function Rejoindre() {
               <p className="text-sm text-neutral-400">
                 Accédez à la bibliothèque musicale et écoutez
               </p>
-            </div>
+            </a>
           </div>
 
           {/* Step 1: Download App */}

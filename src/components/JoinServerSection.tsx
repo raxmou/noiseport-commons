@@ -2,6 +2,8 @@ import tailscaleConnected from "../assets/tailscale-connected.png";
 import tailscaleConnectedWindows from "../assets/tailscale-connected-win.png";
 import customServerAndroid from "../assets/custom-server-android.jpg";
 import registrationCommandAndroid from "../assets/registration-command.jpg";
+import tailscaleMac from "../assets/tailscale-mac.png";
+import tailscaleRegistrationCommandMac from "../assets/tailscale-registration-command-mac.png";
 export default function JoinServerSection() {
   return (
     <section id="join-server">
@@ -83,36 +85,80 @@ export default function JoinServerSection() {
         <br />
         <b>2. Se connecter au serveur Headscale</b>
         <br />
-        Ouvrez le terminal et tapez la commande suivante en remplaçant l'URL et
-        la clé d'authentification par celles fournies par votre
-        administrateur&nbsp;:
+        Tu as deux options pour te connecter&nbsp;:
         <br />
         <br />
-        <code className="bg-neutral-800 px-2 py-1 rounded text-primary font-mono">
-          tailscale up --login-server &lt;url_du_serveur&gt; --authkey
-          &lt;clé_d'authentification&gt;
-        </code>
-        <br />
-        <br />
-        <div className="bg-blue-900/40 border-l-4 border-blue-400 rounded p-4 mb-4 text-neutral-200">
-          <strong>Astuce&nbsp;: ouvrir le terminal sur macOS</strong>
-          <ul className="list-disc list-inside mt-2 mb-2">
-            <li>
-              Ouvrez le Finder et accédez à <strong>Applications</strong> &gt;{" "}
-              <strong>Utilitaires</strong>, puis double-cliquez sur{" "}
-              <strong>Terminal</strong>.
-            </li>
-            <li>
-              Ou utilisez Spotlight en appuyant sur <kbd>Cmd</kbd> +{" "}
-              <kbd>Espace</kbd>, tapez "Terminal" et appuyez sur{" "}
-              <kbd>Entrée</kbd>.
-            </li>
-          </ul>
-          <span className="text-neutral-300">
-            Une fois le terminal ouvert, copiez et collez la commande ci-dessus
-            pour continuer.
-          </span>
+        <div className="ml-4 space-y-4">
+          <div>
+            <strong className="text-primary">
+              Option A : Via l'interface graphique (recommandé)
+            </strong>
+            <br />
+            <ol className="list-decimal list-inside mt-2 space-y-3">
+              <li>
+                Clique sur l'icône Tailscale dans la barre de menu et
+                sélectionne "Add alternate server..."
+                <br />
+                <img
+                  src={tailscaleMac}
+                  alt="Menu Tailscale sur macOS"
+                  className="my-2 rounded border border-neutral-700 max-w-sm"
+                />
+              </li>
+              <li>
+                Entre l'URL du serveur Headscale fournie par ton admin (ex:{" "}
+                <code className="bg-neutral-800 px-1 py-0.5 rounded text-xs">
+                  https://headscale.example.com
+                </code>
+                )
+              </li>
+              <li>
+                Une page web s'ouvrira avec une commande à copier&nbsp;:
+                <br />
+                <img
+                  src={tailscaleRegistrationCommandMac}
+                  alt="Commande d'enregistrement Tailscale"
+                  className="my-2 rounded border border-neutral-700 max-w-md"
+                />
+              </li>
+              <li>
+                Envoie cette commande à ton admin qui l'exécutera pour
+                t'autoriser
+              </li>
+              <li>Une fois autorisé·e, tu seras automatiquement connecté·e</li>
+            </ol>
+          </div>
+          <div>
+            <strong className="text-primary">Option B : Via le terminal</strong>
+            <br />
+            Ouvre le terminal et tape la commande suivante en remplaçant l'URL
+            et la clé d'authentification par celles fournies par ton
+            administrateur&nbsp;:
+            <br />
+            <br />
+            <code className="bg-neutral-800 px-2 py-1 rounded text-primary font-mono text-xs block overflow-x-auto">
+              tailscale up --login-server &lt;url_du_serveur&gt; --authkey
+              &lt;clé_d'authentification&gt;
+            </code>
+            <br />
+            <div className="bg-blue-900/40 border-l-4 border-blue-400 rounded p-3 text-neutral-200 text-xs">
+              <strong>Astuce&nbsp;: ouvrir le terminal sur macOS</strong>
+              <ul className="list-disc list-inside mt-2 mb-2">
+                <li>
+                  Ouvre le Finder et accède à <strong>Applications</strong> &gt;{" "}
+                  <strong>Utilitaires</strong>, puis double-clique sur{" "}
+                  <strong>Terminal</strong>.
+                </li>
+                <li>
+                  Ou utilise Spotlight en appuyant sur <kbd>Cmd</kbd> +{" "}
+                  <kbd>Espace</kbd>, tape "Terminal" et appuie sur{" "}
+                  <kbd>Entrée</kbd>.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <br />
         <b>3. Vérifier la connexion</b>
         <br />
         Pour vérifier que la connexion à Tailscale est bien active&nbsp;:

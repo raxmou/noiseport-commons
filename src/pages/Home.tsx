@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <motion.main
-      className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4"
+      className="flex flex-col items-center justify-center min-h-[70vh] text-center px-4 pt-8"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
@@ -12,7 +12,7 @@ export default function Home() {
       <motion.img
         src={logo}
         alt="Noiseport Logo"
-        className="h-32 w-32 mb-4 object-contain"
+        className="h-32 w-32 mb-4 object-contain mt-8"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6 }}

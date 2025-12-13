@@ -67,7 +67,8 @@ export default function FAQ() {
       answer: (
         <>
           <p className="mb-3">
-            Fournissez les deux éléments suivants aux nouveaux·elles utilisateur·rice·s :
+            Fournissez les deux éléments suivants aux nouveaux·elles
+            utilisateur·rice·s :
           </p>
           <ol className="list-decimal pl-6 mb-4">
             <li>
@@ -158,7 +159,8 @@ export default function FAQ() {
       answer: (
         <>
           <p className="mb-3">
-            Pour retirer l'accès d'un·e utilisateur·rice à votre instance NoisePort :
+            Pour retirer l'accès d'un·e utilisateur·rice à votre instance
+            NoisePort :
           </p>
           <ol className="list-decimal pl-6 mb-4">
             <li>
@@ -216,14 +218,14 @@ docker exec headscale headscale nodes delete --identifier {NODE_ID}`}
             </li>
             <li>Redémarrez les services d'infrastructure</li>
             <li>
-              Tou·te·s les utilisateur·rice·s devront reconnecter leurs appareils en
-              utilisant la nouvelle URL de domaine
+              Tou·te·s les utilisateur·rice·s devront reconnecter leurs
+              appareils en utilisant la nouvelle URL de domaine
             </li>
           </ol>
           <p className="text-yellow-500">
             <strong>Attention :</strong> Ceci est un changement perturbateur qui
-            nécessitera que tou·te·s les utilisateur·rice·s reconfigurent leurs clients
-            Tailscale.
+            nécessitera que tou·te·s les utilisateur·rice·s reconfigurent leurs
+            clients Tailscale.
           </p>
         </>
       ),

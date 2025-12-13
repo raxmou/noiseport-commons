@@ -34,8 +34,8 @@ export default function Creer() {
               Héberge ton propre serveur NoisePort
             </h1>
             <p className="text-base md:text-lg text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-              Déploie NoisePort Server sur ta machine et partage ta
-              bibliothèque musicale avec tes proches en toute autonomie.
+              Déploie NoisePort Server sur ta machine et partage ta bibliothèque
+              musicale avec tes proches en toute autonomie.
             </p>
           </div>
 

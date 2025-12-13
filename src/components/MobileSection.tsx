@@ -86,8 +86,8 @@ export default function MobileSection() {
           propose les mêmes fonctionnalités principales que la version desktop
           pour écouter et gérer votre bibliothèque musicale.
           <br />
-          <b>Remerciements&nbsp;:</b> Un grand merci aux développeur·euse·s actif·ve·s de
-          Finamp pour leur travail et leur engagement open-source.
+          <b>Remerciements&nbsp;:</b> Un grand merci aux développeur·euse·s
+          actif·ve·s de Finamp pour leur travail et leur engagement open-source.
         </div>
       </section>
       <section id="mobile-screenshots" className="scroll-mt-24">

@@ -69,7 +69,8 @@ export default function DesktopSection() {
           <div className="bg-yellow-900/80 border border-yellow-600 rounded p-3 my-4 text-yellow-200">
             <b>Note&nbsp;:</b> Il est probable que votre système d'exploitation
             (macOS, Windows, Linux) refuse d'ouvrir l'application car elle ne
-            provient pas d'un store agréé ou d'un·e développeur·euse identifié·e.
+            provient pas d'un store agréé ou d'un·e développeur·euse
+            identifié·e.
             <br />
             <b>Vous devrez autoriser l'accès&nbsp;:</b>
             <ul className="list-disc pl-5 mt-2 mb-2">
@@ -121,8 +122,8 @@ export default function DesktopSection() {
           le <b>suivi des recherches</b> et le <b>téléchargement Soulseek</b>{" "}
           directement dans l'application.
           <br />
-          Je tiens à <b>remercier énormément</b> tou·tes les contributeur·rice·s de
-          Feishin pour leur travail exceptionnel.
+          Je tiens à <b>remercier énormément</b> tou·tes les contributeur·rice·s
+          de Feishin pour leur travail exceptionnel.
           <br />
           NoisePort suit de près les mises à jour de Feishin pour rester à jour.
           <br />
