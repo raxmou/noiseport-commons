@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Manifeste from "./pages/Manifeste";
 import Installer from "./pages/Installer";
 import Contact from "./pages/Contact";
+import HowItWorks from "./pages/HowItWorks";
+import FAQ from "./pages/FAQ";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/manifeste" element={<Manifeste />} />
             <Route path="/installer" element={<Installer />} />
+            <Route path="/how-it-works" element={<HowItWorks />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
